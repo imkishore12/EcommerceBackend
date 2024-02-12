@@ -1,9 +1,13 @@
 const express = require("express");
-const {route}=require("./Router/ProductsRouting");
+const productRouter=require("./Router/ProductsRouting");
+const userRouter=require("./Router/UserRoutes");
+// const {route}=require("./Router/UserRoutes");
 const app=express();
 const cors=require("cors");
 app.use(cors({
     origin:"*"
 }))
-app.use(route)
+app.use(express.json())
+app.use("/user", userRouter)
+app.use("/products",productRouter)
 app.listen(5000)
