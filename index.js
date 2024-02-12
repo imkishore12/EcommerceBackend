@@ -10,8 +10,8 @@ app.use(cors({
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
-app.use('/user',productRouter)
-app.use('/products',userRouter)
+app.use('/user',userRouter)
+app.use('/products',productRouter)
 
 app.listen(5000,()=>{
     console.log("sever is running fine");
