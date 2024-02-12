@@ -1,26 +1,26 @@
-const route =  require('express').Router();
+const productRouter =  require('express').Router();
 const alldata=require("../Data/Store")
-route.get("/", (request, response)=>{
+productRouter.get("/", (request, response)=>{
     return response.send(alldata)
 });
-route.get("/home", (request, response)=>{
+productRouter.get("/home", (request, response)=>{
     return response.send(alldata)
 });
-route.get("/mobile", (request, response)=>{
-    return response.send(alldata)
-});
-
-route.get("/laptops", (request, response)=>{
-    return response.send(alldata)
-});
-route.get("/tablets", (request, response)=>{
+productRouter.get("/mobile", (request, response)=>{
     return response.send(alldata)
 });
 
-route.get("/accessories", (request, response)=>{
+productRouter.get("/laptops", (request, response)=>{
+    return response.send(alldata)
+});
+productRouter.get("/tablets", (request, response)=>{
+    return response.send(alldata)
+});
+
+productRouter.get("/accessories", (request, response)=>{
     return response.send(alldata)
 });
 
 
 
-module.exports = {route}
+module.exports = productRouter

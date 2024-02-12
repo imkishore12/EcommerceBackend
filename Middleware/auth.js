@@ -1,7 +1,7 @@
 
 
 const jwt  = require('jsonwebtoken')
-const secretKey = 'kishore'
+const secretKey = 'acharya'
 
 const auth  = (req,res,next)=>{
 
@@ -27,3 +27,10 @@ else{
 }
 
 module.exports = auth
+
+
+
+
+
+
+
