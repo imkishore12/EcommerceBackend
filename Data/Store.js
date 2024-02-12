@@ -1,6 +1,6 @@
 var Count=0;
 
-const store=[
+const alldata=[
     {
         "id":Count++,
             "category":"Mobile",
@@ -682,4 +682,4 @@ const store=[
 ]
 
 
-module.exports=store
+module.exports=alldata
