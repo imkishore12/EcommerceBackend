@@ -13,6 +13,6 @@ app.use(express.urlencoded({extended:true}));
 app.use("/products", productRouter)
 app.use("/user", userRouter)
 
-app.listen(8888,()=>{
+app.listen(5000,()=>{
     console.log("sever is running fine");
 })
